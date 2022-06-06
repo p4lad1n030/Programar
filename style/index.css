@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* 
+d = div
+d 1,2,3,4....
+= recebera se houver mais de uma div
+s = section
+h = header
+ar = article
+as = aside
+fo = footer
+
+*/
+.opacity{
+  opacity: 0.7;
+}
+nav:hover{
+  opacity: 1;
+}
+.d {
+ height: 10vh;
+}
+
+
+.h {
+  background-image: url('../assets/image/header1000x667.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 80vh;
+}
+
+
+
+@media screen and (max-width: 768px){
+.mm{
+  margin: 4px ;
+}
+.op{
+  opacity: 0.0!important;
+}
+.mar{
+  margin-left: auto;
+}
+}

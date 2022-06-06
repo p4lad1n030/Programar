@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/ecommerce.css">
+  <title>{program(amar)}</title>
+  <script src="https://kit.fontawesome.com/d88fbfa2f1.js" crossorigin="anonymous"></script>
+</head>
+  <!-- 
+  referência de responsividade:
+  media Query: <= 575
+  sm >= 576px
+  md >= 768px
+  lg >= 992px
+  xl >= 1200px
+ -->
+<body class="">
+  <!-- menu navegation -->
+  <header class="mb-5">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top opacity " >
+      <a class="bg-dark rounded " href="index.html"><img class="navbar-brand rounded" src="assets/image/programartrans.png" alt=""></a>
+      <button class="navbar-toggler btn-outline-secondary" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="menuPrincipal">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item mr-1 mm ">
+            <a class=" btn btn-outline-secondary " href="ecommerce.html">E-commerce <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary" href="#">Pagina Simples</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- menu para telas maiores do que 576px -->
+  <nav class="sideBar ">
+    <h1 class="mt-n5">Logo</h1>
+      <h3 class="mt">Coleções</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              Homem
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+              <ul class="">
+                <li class=""><a href="" class="">Primavera</a></li>
+                <li class=""><a href="" class="">Verão</a></li>
+                <li class=""><a href="" class="">Outono</a></li>
+                <li class=""><a href="" class="">Inverno</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              Mulher
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <ul class="">
+                <li class=""><a href="" class="">Primavera</a></li>
+                <li class=""><a href="" class="">Verão</a></li>
+                <li class=""><a href="" class="">Outono</a></li>
+                <li class=""><a href="" class="">Inverno</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+              Infanto-Juvenil
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <ul class="">
+                <li class=""><a href="#garoto" class="h5" data-toggle="collapse">Garoto</a>
+                  <div id="garoto" class="collapse">
+                    <a href="" class="">Primavera</a>
+                    <a href="" class="">Verão</a>
+                    <a href="" class="">Outono</a>
+                    <a href="" class="">inverno</a>
+                  </div>
+                </li>
+                <li class=""><a href="#garota" class="h5" data-toggle="collapse">Garota</a>
+                  <div id="garota" class="collapse">
+                    <a href="" class="">Primavera</a>
+                    <a href="" class="">Verão</a>
+                    <a href="" class="">Outono</a>
+                    <a href="" class="">inverno</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapsefour">
+              Infantil
+            </a>
+          </div>
+          <div id="collapsefour" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <ul class="">
+                <li class=""><a href="#menino" class="h5" data-toggle="collapse">Menino</a>
+                  <div id="menino" class="collapse">
+                    <a href="" class="">Primavera</a>
+                    <a href="" class="">Verão</a>
+                    <a href="" class="">Outono</a>
+                    <a href="" class="">inverno</a>
+                  </div>
+                </li>
+                <li class=""><a href="#menina" class="h5" data-toggle="collapse">Menina</a>
+                  <div id="menina" class="collapse">
+                    <a href="" class="">Primavera</a>
+                    <a href="" class="">Verão</a>
+                    <a href="" class="">Outono</a>
+                    <a href="" class="">inverno</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+        
+      </nav>
+
+<section class=" mar">
+
+  <!-- menu lateral  para mobile-->
+  <nav class="navbar d-sm-none navbar-light bg-light">
+    <a class="navbar-brand" href="#">menu</a>
+    <button type="button" class="navbar-toggler" data-toggle="modal" data-target="#Modal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="modal text-light" id="Modal">
+      <div class="modal-header ">
+      <h3 class="modal-title mx-auto display-3 font-weight-bolder">Coleções</h3>
+      </div>
+      <!-- masc -->
+      <h4 class="mx-auto text-center my-5">
+        <a href="" class="btn btn-outline-primary font-weight-bolder" data-toggle="collapse" data-target="#masc">Masculina</a>
+      </h4>
+      <div id="masc" class="collapse text-center ">
+        <a href="" class="btn btn-success">Primavera</a>
+        <a href="" class="btn btn-warning">Verão</a>
+        <a href="" class="btn btn-secondary">Outono</a>
+        <a href="" class="btn btn-primary">inverno</a>
+      </div>
+      <!-- fem -->
+      <h4 class="text-center my-5">
+        <a href="" class="btn btn-outline-primary font-weight-bolder" data-toggle="collapse" data-target="#fem">Feminina</a>
+      </h4>
+      <div id="fem" class="collapse text-center  flex-column">
+        <a href="" class="btn btn-success">Primavera</a>
+        <a href="" class="btn btn-warning">Verão</a>
+        <a href="" class="btn btn-secondary">Outono</a>
+        <a href="" class="btn btn-primary">inverno</a>
+      </div>
+
+      <h4 class="text-center my-5">
+        <a href="" class="btn btn-outline-primary  font-weight-bolder" data-toggle="collapse" data-target="#infantil">Infantil</a>
+      </h4>
+      <div id="infantil" class="collapse text-center">
+        <h5 class=""><a href="" class="btn text-light" data-toggle="collapse" data-target="#menino">Menino</a></h5>
+        <div id="menino" class="collapse">
+          <a href="" class="btn btn-success">Primavera</a>
+          <a href="" class="btn btn-warning">Verão</a>
+          <a href="" class="btn btn-secondary">Outono</a>
+          <a href="" class="btn btn-primary">inverno</a>
+        </div>
+
+        <h5 class=""><a href="" class="btn text-light" data-toggle="collapse" data-target="#menina">Menina</a></h5>
+        <div id="menina" class="collapse">
+          <a href="" class="btn btn-success">Primavera</a>
+          <a href="" class="btn btn-warning">Verão</a>
+          <a href="" class="btn btn-secondary">Outono</a>
+          <a href="" class="btn btn-primary">inverno</a>
+        </div>
+      </div>
+
+      <h4 class="text-center my-5">
+        <a href="" class="btn btn-outline-primary font-weight-bolder" data-toggle="collapse" data-target="#infj">Infanto-Juvenil</a>
+      </h4>
+      <div id="infj" class="collapse text-center">
+        <h5 class=""><a href="" class="btn text-light" data-toggle="collapse" data-target="#garoto">Garoto</a></h5>
+        <div id="garoto" class="collapse">
+          <a href="" class="btn btn-success">Primavera</a>
+          <a href="" class="btn btn-warning">Verão</a>
+          <a href="" class="btn btn-secondary">Outono</a>
+          <a href="" class="btn btn-primary">inverno</a>
+        </div>
+        <h5 class=""><a href="" class=" btn text-light" data-toggle="collapse" data-target="#garota">Garota</a></h5>
+        <div id="garota" class="collapse">
+          <a href="" class="btn btn-success">Primavera</a>
+          <a href="" class="btn btn-warning">Verão</a>
+          <a href="" class="btn btn-secondary">Outono</a>
+          <a href="" class="btn btn-primary">inverno</a>
+        </div>
+      </div>
+    <div class="modal-footer">
+        <i class="fa-regular fa-rectangle-xmark  bg-danger" aria-label="Close" data-dismiss="modal"></i>
+      </div> 
+    </div>
+  </nav>
+                            <!-- COMEÇA O SITE -->
+  <header class="d-flex justify-content-between  text-center text-light bg-dark">
+    <p class="d-inline-block ml-2 h2">Logo</p>
+    <div class="d-flex align-self-center">
+      <a href="" class=""><i class='far fa-user-circle fa-xl mr-3' ></i></a>
+      <a href="favoritos.html" class=""><i class='fas fa-heart fa-xl mr-3' style='color:red'></i></a>
+      <a href="produtos/carrinho.html" class=""> </i>
+        <i class="fa-solid fa-xl fa-cart-shopping mr-4 " style='color:white'></i>
+      </a>
+    </div>
+  </header>
+
+  <article class="">
+    <header class="he1 d-flex justify-content-between text-center text-light ">
+      <p class="text-body font-weight-bold">Coleção Infantil</p>
+      <div class="mr-auto mt-4 "><input type="button" value="Comprar Agora" class=" btn btn-dark"></div>
+    </header>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-6 border position-relative ">
+          <a href="" class="">
+            <i class="fa fa-heart-o fa-xl i"></i>
+          </a>
+          <img class="img-fluid " src="assets/image/infantoM.jpg" alt="">
+          <div class="position-absolute Tlegenda  ">
+            <h5 class="text-light font-weight-bold">Nome da Coleção</h5>
+            <p class="text-light ml-n5 font-weight-bold">Casual</p>
+          </div>
+        </div>
+
+        <div class="col-6 border position-relative">
+          <a href="" class="">
+            <i class="fa fa-heart-o fa-xl i"></i>
+          </a>
+          <img class="img-fluid " src="assets/image/adultoM.jpg" alt="">
+          <div class="position-absolute Tlegenda ">
+            <h5 class="text-light">Nome da Coleçao</h5>
+            <p class="text-light ml-n5 font-weight-bold">calça </p>
+          </div> 
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-6 border position-relative">
+          <a href="" class="">
+            <i class="fa fa-heart-o fa-xl i  "></i>
+          </a>
+          <img class="img-fluid" src="assets/image/infantoH.jpg" alt="">
+          <div class="position-absolute Tlegenda ">
+            <h5 class="font-weight-bold text-light">Nome da Coleçao</h5>
+            <p class="font-weight-bold text-light ml-n5">moleton</p>
+          </div>
+        </div>
+
+        <div class="col-6 border position-relative">
+          <a href="" class="">
+            <i class="fa fa-heart-o fa-xl i"></i>
+          </a>
+          <img class="img-fluid " src="assets/image/adultoH.jpg" alt="">
+          <div class="position-absolute Tlegenda ">
+            <h5 class="font-weight-bold text-light">Nome da Coleçao</h5>
+            <p class="font-weight-bold text-light ml-n5">camisa</p>
+        </div>
+      </div>
+
+
+      <div class="row ml-0">
+        <div class="col-6 border  position-relative">
+          <a href="" class="">
+            <i class="fa fa-heart-o fa-xl i"></i>
+          </a>
+          <img class="img-fluid " src="assets/image/infantilH.jpg" alt="">
+          <div class="position-absolute Tlegenda ">
+            <h5 class="text-light font-weight-bold">Nome da Coleçao</h5>
+            <p class="text-light ml-n5 font-weight-bold">conjunto</p>
+          </div>
+        </div>
+
+        <div class="col-6 border position-relative">
+          <a href="" class="">
+            <i class="fa fa-heart-o fa-xl i"></i>
+          </a>
+          <img class="img-fluid " src="assets/image/infantilM.jpg" alt=""> 
+          <div class="position-absolute Tlegenda ">
+            <h5 class="text-light font-weight-bold">Nome da Coleçao</h5>
+            <p class="text-light ml-n5 font-weight-bold">calçado</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    
+
+    
+  </article>
+  <aside class=" text-center text-light  bg-info">
+    <h2 class="">Confira essas promoções</h2>
+    <!-- carrocel das promoções -->
+    <div id="demo" class="carousel slide " data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner ">
+        <div class="carousel-item active mb-2">
+          <img class="img-thumbnail rounded" src="assets/image/infantoM.jpg" alt="promo1">
+          <div class="carousel-caption">
+            <h3>30% OFF</h3>
+            <p class="btn btn-light">COMPRAR AGORA</p>
+          </div>
+        </div>
+        <div class="carousel-item mb-2">
+          <img class="img-thumbnail rounded" src="assets/image/adultoH.jpg" alt="promo2">
+          <div class="carousel-caption">
+            <h3>10% OFF</h3>
+            <p class="btn btn-light">COMPRAR AGORA</p>
+          </div>
+        </div>
+        <div class="carousel-item mb-2">
+          <img class="img-thumbnail rounded" src="assets/image/infantilH.jpg" alt="promo3">
+          <div class="carousel-caption">
+            <h3>60% OFF</h3>
+            <p class="btn btn-light">COMPRAR AGORA</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    
+    </div>
+  </aside>
+</section>
+<footer class=" text-center text-light fo bg-dark mar d-flex  justify-content-center">
+  <header class="">
+    <div class="align-self-center">
+      <h3 class="mb-3">Formas de Pagamento</h3>
+        <i class='fab fa-cc-mastercard fa-2xl mr-1'></i><p class="d-inline-block mr-3">master</p>
+        <i class='fab fa-cc-visa fa-2xl mr-1'></i><p class="d-inline-block mr-3">visa</p>
+        <i class='fab fa-paypal fa-2xl mr-1'></i><p class="d-inline-block mr-3">PayPal</p>
+        <i class="fa-brands fa-pix fa-2xl mr-1"></i> <p class="d-inline-block mr-">Pix</p>
+    </div>
+    <div class="d-flex flex-column mb-3">
+      <h3 class="mb-2">Contato</h3>
+      <div class="d-flex justify-content-around ">
+        <a href="" class=""><i class="fa-brands fa-2xl fa-facebook" style='color:white'></i></a>
+        <a href="" class=""><i class="fa-brands fa-2xl fa-instagram-square" style='color:white'></i></a>
+        <a href="" class=""><i class="fa-brands fa-2xl fa-whatsapp-square" style='color:white'></i></a>
+      </div> 
+    </div>
+  </header>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- importações -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

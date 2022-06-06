@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/index.css">
+  <title>{program(amar)}</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body class="container-fluid">
+  <!-- 
+  referência de responsividade:
+  media Query: <= 575
+  sm >= 576px
+  md >= 768px
+  lg >= 992px
+  xl >= 1200px
+ -->
+  
+  <header class="mb-5">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top opacity " >
+      <a class="bg-dark rounded " href="index.html"><img class="navbar-brand rounded" src="assets/image/programartrans.png" alt=""></a>
+      <button class="navbar-toggler btn-outline-secondary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item mr-1 mm ">
+            <a class=" btn btn-outline-secondary " href="ecommerce.html">E-commerce <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary" href="#">Pagina Simples</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <section class=" border ">
+    <header class="border h mt-3">
+   <h1 class="text-center text-light">A sua solução para gerenciamento, arquitetura e manutenção de sistemas web Front e BackEnd</h1>
+    </header>
+    <!-- vantagens de ter um site -->
+    <!-- carrocel oculto em dispositivos moveis -->
+    <div id="demo" class="carousel slide " data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators op">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+        <div class="carousel-inner w-75 mx-auto mt-n5 ">
+          <div class="carousel-item active border ">
+            <img class="img-fluid img-thumbnail " src="assets/image/visibilidade.png" alt="visibilidade">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="px-1  font-weight-bolder text-light bg-dark d-inline">VISIBILIDADE</h2>
+              <p class="mt-2 font-weight-bold d-block h3 bg-dark ">Seja conhecido por toda parte</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid img-thumbnail" src="assets/image/produtividade.png" alt="produtividade">
+            <div class="carousel-caption d-none d-md-block ">
+              <h2 class="px-1  font-weight-bolder text-light bg-dark d-inline">FAÇA MAIS!</h2>
+              <p class=" mt-2 font-weight-bold mb-n1 h3 bg-dark">Na internet o seu negocio não fecha mesmo depois do expediente</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid img-thumbnail" src="assets/image/lucro.png" alt="lucro">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="px-1  font-weight-bolder text-light bg-dark d-inline">Lucre!</h2>
+              <p class="mt-2 font-weight-bold d-block h3 bg-dark">e como resultado obtenha mais lucro!</p>
+            </div>
+          </div>
+        </div>
+  
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev d-sm-none" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon "></span>
+      </a>
+      <a class="carousel-control-next d-sm-none" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- The slideshow  to cell-->
+    <div id="demo" class="carousel slide d-block d-md-none" data-ride="carousel">
+      <div class="carousel-inner w-75 mx-auto  mt-1">
+        <div class="carousel-item active ">
+          <div class=" text-center  d-block ">
+            <h2 class="  font-weight-bolder d-inline">VISIBILIDADE</h2>
+            <p class=" font-weight-bold d-block h3">Seja conhecido por toda parte</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class=" text-center d-block ">
+            <h2 class="  font-weight-bolder d-inline">FAÇA MAIS!</h2>
+            <p class=" font-weight-bold h3">Na internet o seu negocio não fecha mesmo depois do expediente</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center  d-block">
+            <h2 class="  font-weight-bolder text-center d-inline">Lucre!</h2>
+            <p class=" font-weight-bold h3">e como resultado obtenha  mais lucro!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- techs que eu sei -->
+    <article class="border mt-md-n5">
+      <h1 class="mt-5 text-center">Você pode contar com tecnologias consolidadas no mercado</h1>
+
+      <div class="d-sm-flex w-100 div1 mx-auto container border-bottom  ">
+        <img class="" src="assets/image/html.png" alt="">
+        <p class="align-self-center p-3 border-left">	HTML5 (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet. É a quinta versão da linguagem HTML.
+        </p>
+      </div>
+      <div class="d-sm-flex w-100 div2 mx-auto container border-bottom  ">
+        <img class="mar" src="assets/image/css3.png" alt="">
+        <p class="align-self-center p-3 border-left ">	CSS (Cascading Style Sheets) são folhas de estilo em cascata. O CSS é uma linguagem que complementa e formata o HTML (HyperText Markup Language, a Linguagem de Marcação de Hipertexto) organizando melhor as linhas e adicionando novas possibilidades ao código. Com ele, você pode modificar praticamente tudo dentro do seu layout (como as cores, background, características de fontes, margens, preenchimentos, posição, até a própria estrutura do site 
+        </p>
+      </div>
+      <div class="d-sm-flex w-100 div3 mx-auto container border-bottom  ">
+        <img class="" src="assets/image/Bootstrap.png" alt="">
+        <p class="align-self-center p-3 border-left ">	bootstrap acelera o desenvolvimento de aplicações web alem de posuir uma arctetura magnifica
+        </p>
+      </div>
+
+      <div class="d-sm-flex w-100 div4 mx-auto mt-2 container border-bottom  p">
+        <img src="assets/image/firebase.png" alt="">
+        <p class="align-self-center p-3  border-left">	firebase é excelente para aplicações como e-commerce, registro e controle de usuários, cadastro de usuários e aqui com a {program(amar)} você tem todos esses serviços a sua disposição
+        </p>
+      </div>
+
+      <div class="d-sm-flex w-100 div5 mt-2 mx-auto container border-bottom ">
+        <img src="assets/image/jstrans.png" alt="">
+        <p class="align-self-center p-3 border-left">	JavaScript é uma linguagem de script orientada a objetos, multiplataforma. É uma linguagem pequena e leve. Dentro de um ambiente de host (por exemplo, um navegador web) o JavaScript pode ser ligado aos objetos deste ambiente para prover um controle programático sobre eles
+        </p>
+      </div>
+      <div class="d-sm-flex w-100 div6 mt-2 mx-auto container ">
+        <img src="assets/image/Jquery.png" alt="">
+        <p class="align-self-center p-3 border-left">	o jquery foi o queridinho por muitos anos  sendo substituidos por tecnologias mais recentes, mas não perdeu sua força e utilidade
+        </p>
+      </div>
+    </article>
+    <!-- techs que vou aprender -->
+    <aside>
+      <h1 class="text-center">E em breve atuaremos também com as seguintes tecnologias</h1>
+      <div class="d-sm-flex w-100 div7 mt-2 mx-auto mb-3 container ">
+      <img src="assets/image/nodejs.png" alt="">
+      <p class="align-self-center p-3 border-left">O Node.js pode ser usado em inúmeros cenários. Conta com um dos maiores gerenciadores de pacotes e os recursos computacionais são consideravelmente menos exigidos ao usar a linguagem Node. A velocidade na disponibilização de um sistema para uso (deploy) e na replicação de máquinas pode crescer muito.</p>
+    </div>
+      <div class="d-sm-flex w-100 div8 mt-2 mx-auto mb-3 container ">
+      <img src="assets/image/mongodb.png" alt="">
+      <p class="align-self-center p-3 border-left">MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas.</p>
+    </div>
+      <div class="d-sm-flex w-100 div9 mt-2 mx-auto mb-3 container ">
+      <img src="assets/image/react.png" alt="">
+      <p class="align-self-center p-3 border-left">	O React é uma biblioteca que utiliza a linguagem de programação JavaScript e é uma das mais versáteis e populares bibliotecas do mundo</p>
+    </div>
+      <div class="d-sm-flex w-100 div10 mt-2 mx-auto mb-3 container ">
+      <img src="assets/image/flutter.png" alt="">
+      <p class="align-self-center p-3 border-left ">	O Flutter é o framework móvel do Google que permite construir aplicativos Android e iOS com apenas um código</p>
+    </div>
+  
+  </aside>
+    
+  </section>
+  <!-- roda pe -->
+  <footer >
+    <h3 class="text-center">fale conosco nas redes sociais e WhatsApp</h3>
+    <div class="d-flex mt-5 align-items-center justify-content-around mt-n1">
+      <a href="https://www.linkedin.com/in/pedro-dos-santos-maciel-jr-30002a1b5/" target="_blank" rel="noopener noreferrer">
+        <img  src="assets/image/linkdintransp.png" alt="">
+      </a>
+      <a href="https://www.instagram.com/programar_psmj/" target="_blank" rel="noopener noreferrer">
+        <img  src="assets/image/insta.png" alt="" >
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5551985172153" target="_blank">
+      <img  src="assets/image/whatss80trans.png" alt="">
+      </a>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/ui.js"></script>
+
+</body>
+</html>
