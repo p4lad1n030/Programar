@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style/ecommerce.css">
   <title>{program(amar)}</title>
   <script src="https://kit.fontawesome.com/d88fbfa2f1.js" crossorigin="anonymous"></script>
+  <script src="scripts/ui.js"></script>
 </head>
   <!-- 
   referência de responsividade:
@@ -21,13 +22,13 @@
   <!-- menu navegation -->
   <header class="mb-5">
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top opacity " >
-      <a class="bg-dark rounded " href="index.html"><img class="navbar-brand rounded" src="assets/image/programartrans.png" alt=""></a>
+      <a class="bg-dark rounded mb-1 " href="index.html"><img class="navbar-brand rounded" src="assets/image/programartrans.png" alt="logo empresa"></a>
       <button class="navbar-toggler btn-outline-secondary" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="menuPrincipal">
         <ul class="navbar-nav ml-auto ">
-          <li class="nav-item mr-1 mm ">
+          <li class="nav-item mr-1 mb-1 ">
             <a class=" btn btn-outline-secondary " href="ecommerce.html">E-commerce <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -231,7 +232,7 @@
       </a>
     </div>
   </header>
-
+<!-- aqui começa os produtos -->
   <article class="">
     <header class="he1 d-flex justify-content-between text-center text-light ">
       <p class="text-body font-weight-bold">Coleção Infantil</p>
@@ -242,7 +243,7 @@
       <div class="row">
         <div class="col-6 border position-relative ">
           <a href="" class="">
-            <i class="fa fa-heart-o fa-xl i"></i>
+            <i class="fa fa-heart-o fa-xl i" data-key="like"></i>
           </a>
           <img class="img-fluid " src="assets/image/infantoM.jpg" alt="">
           <div class="position-absolute Tlegenda  ">

@@ -13,9 +13,9 @@ nav:hover{
   background-position-x: center;
   height: 50vh;
 }
-
-.carousel-item .active:after{
-  margin-right: 50px;
+/* estilo para favoritar um produto */
+.like{
+  color: red;
 }
 a:link {
   text-decoration: none;

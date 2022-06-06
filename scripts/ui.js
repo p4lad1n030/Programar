@@ -9,3 +9,6 @@ sr.reveal('.div7',{duration: 2500,reset: true })
 sr.reveal('.div8',{duration: 2500,reset: true })
 sr.reveal('.div9',{duration: 2500,reset: true })
 sr.reveal('.div10',{duration: 2500,reset: true })
+
+// função para favoritar um iten
+$('[data-key=like]').click(console.log('bb'))
