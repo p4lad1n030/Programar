@@ -1,7 +1,23 @@
 @charset "utf-8";
 
+/* 
+  referência de responsividade:
+  sm >= 576px
+  md >= 768px
+  lg >= 992px
+  xl >= 1200px
+   */
 .opacity{
   opacity: 0.7;
+}
+.carrinho:hover{
+  color: #066bd7 !important;
+}
+.fav:hover{
+  color: #FF0000!important;
+}
+.user:hover{
+  color: #066bd7 !important;
 }
 nav:hover{
   opacity: 1;
@@ -15,7 +31,7 @@ nav:hover{
 }
 /* estilo para favoritar um produto */
 .like{
-  color: red;
+  color: red!important;
 }
 a:link {
   text-decoration: none;
@@ -25,13 +41,13 @@ li{
 }
 /* legenda cards  */
  .Tlegenda{
-   
   top: 1%;
   right: 14%;
   text-align: center;
  }
  /* icone favoritar */
 .i {
+  z-index: 1;
   position: absolute;
   color: white;
   top: 13%;
@@ -49,7 +65,7 @@ li{
     text-align: center;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 24%;
     height: 100vh; 
     position: fixed;
     overflow-y: auto;
@@ -58,22 +74,75 @@ li{
     background-image: url('../assets/image/bebe.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    /* height: 85vh; */
+    height: 45vh;
+  } 
+  h5{
+    font-size: 2.8vw;
   }
   .mar{
     margin-left: 25%;
   }
-  div a{
-    display: block;
-  }
+
   body section{
     margin-top: 65px;
   }
+  .Tlegenda{
+    top: 1%;
+    right: 20%;
+    text-align: center;
+   }
+   /* icone favoritar */
+  .i {
+    font-size: 1vw;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    top: 13%;
+    left: 66%;
+    margin-top: 5px;
+  }
 
 }
+@media screen and (min-width:768px){
+  .he1{
+    background-size: cover;
+    height: 75vh;
+  }
+}
+@media screen and (min-width:992px){
+  .he1{
+    height: 75vh;
+  }
+}
 
-
-
+@media screen and (min-width:1200px){
+  .he1{
+    height: 95vh;
+  }
+  h5{
+    font-size: 1.8vw;
+  }
+}
+@media screen and (min-width:1920px){
+  .Tlegenda{
+  
+    top: 1%;
+    right: 49%;
+    text-align: center;
+   }
+  .i {
+    top: 13%;
+    left: 55%;
+    font-size: 1.8vw!important;
+  }
+  h5{
+    font-size: 1.8vw;
+  }
+  header > p{
+  font-size: 2.5vw;  
+  }
+  
+}
 
 
 

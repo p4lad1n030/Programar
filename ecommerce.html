@@ -8,11 +8,9 @@
   <link rel="stylesheet" href="style/ecommerce.css">
   <title>{program(amar)}</title>
   <script src="https://kit.fontawesome.com/d88fbfa2f1.js" crossorigin="anonymous"></script>
-  <script src="scripts/ui.js"></script>
 </head>
   <!-- 
   referência de responsividade:
-  media Query: <= 575
   sm >= 576px
   md >= 768px
   lg >= 992px
@@ -22,7 +20,7 @@
   <!-- menu navegation -->
   <header class="mb-5">
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top opacity " >
-      <a class="bg-dark rounded mb-1 " href="index.html"><img class="navbar-brand rounded" src="assets/image/programartrans.png" alt="logo empresa"></a>
+      <a class="bg-dark rounded mb-1 " href="index.html"><img class="navbar-brand rounded mx-auto" src="assets/image/programartrans.png" alt="logo empresa"></a>
       <button class="navbar-toggler btn-outline-secondary" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,7 +49,7 @@
             </a>
           </div>
           <div id="collapseOne" class="collapse show" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body ml-sm-n5">
               <ul class="">
                 <li class=""><a href="" class="">Primavera</a></li>
                 <li class=""><a href="" class="">Verão</a></li>
@@ -69,7 +67,7 @@
             </a>
           </div>
           <div id="collapseTwo" class="collapse" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body ml-sm-n5">
               <ul class="">
                 <li class=""><a href="" class="">Primavera</a></li>
                 <li class=""><a href="" class="">Verão</a></li>
@@ -87,21 +85,21 @@
             </a>
           </div>
           <div id="collapseThree" class="collapse" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body ml-sm-n5">
               <ul class="">
                 <li class=""><a href="#garoto" class="h5" data-toggle="collapse">Garoto</a>
                   <div id="garoto" class="collapse">
                     <a href="" class="">Primavera</a>
-                    <a href="" class="">Verão</a>
-                    <a href="" class="">Outono</a>
-                    <a href="" class="">inverno</a>
+                    <a href="" class="d-block">Verão</a>
+                    <a href="" class="d-block">Outono</a>
+                    <a href="" class="d-block">inverno</a>
                   </div>
                 </li>
                 <li class=""><a href="#garota" class="h5" data-toggle="collapse">Garota</a>
                   <div id="garota" class="collapse">
                     <a href="" class="">Primavera</a>
-                    <a href="" class="">Verão</a>
-                    <a href="" class="">Outono</a>
+                    <a href="" class="d-block">Verão</a>
+                    <a href="" class="d-block">Outono</a>
                     <a href="" class="">inverno</a>
                   </div>
                 </li>
@@ -116,21 +114,21 @@
             </a>
           </div>
           <div id="collapsefour" class="collapse" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body ml-sm-n5">
               <ul class="">
                 <li class=""><a href="#menino" class="h5" data-toggle="collapse">Menino</a>
                   <div id="menino" class="collapse">
                     <a href="" class="">Primavera</a>
-                    <a href="" class="">Verão</a>
-                    <a href="" class="">Outono</a>
+                    <a href="" class="d-block">Verão</a>
+                    <a href="" class="d-block">Outono</a>
                     <a href="" class="">inverno</a>
                   </div>
                 </li>
                 <li class=""><a href="#menina" class="h5" data-toggle="collapse">Menina</a>
                   <div id="menina" class="collapse">
                     <a href="" class="">Primavera</a>
-                    <a href="" class="">Verão</a>
-                    <a href="" class="">Outono</a>
+                    <a href="" class="d-block">Verão</a>
+                    <a href="" class="d-block">Outono</a>
                     <a href="" class="">inverno</a>
                   </div>
                 </li>
@@ -225,10 +223,10 @@
   <header class="d-flex justify-content-between  text-center text-light bg-dark">
     <p class="d-inline-block ml-2 h2">Logo</p>
     <div class="d-flex align-self-center">
-      <a href="" class=""><i class='far fa-user-circle fa-xl mr-3' ></i></a>
-      <a href="favoritos.html" class=""><i class='fas fa-heart fa-xl mr-3' style='color:red'></i></a>
+      <a href="" class=""><i class='far fa-user-circle fa-xl mr-3 user' style='color:rgb(251, 248, 248)'></i></a>
+      <a href="favoritos.html" class=""><i class='fas fa-heart fa-xl mr-3 fav' style='color:rgb(251, 248, 248)'></i></a>
       <a href="produtos/carrinho.html" class=""> </i>
-        <i class="fa-solid fa-xl fa-cart-shopping mr-4 " style='color:white'></i>
+        <i class="fa-solid fa-xl fa-cart-shopping mr-4 carrinho " style='color:rgb(251, 248, 248)' ></i>
       </a>
     </div>
   </header>
@@ -236,64 +234,64 @@
   <article class="">
     <header class="he1 d-flex justify-content-between text-center text-light ">
       <p class="text-body font-weight-bold">Coleção Infantil</p>
-      <div class="mr-auto mt-4 "><input type="button" value="Comprar Agora" class=" btn btn-dark"></div>
+      <div class="mx-5 mt-4 ">
+        <input type="button" value="Comprar Agora" class=" btn btn-dark">
+      </div>
     </header>
-    <div class="container">
 
-      <div class="row">
-        <div class="col-6 border position-relative ">
-          <a href="" class="">
-            <i class="fa fa-heart-o fa-xl i" data-key="like"></i>
-          </a>
+    <div class="container">
+      <div class="row justify-content-around mb-1">
+        <div class="col-4 border position-relative ">
+            <i data-key="1" class="fas fa-heart  i" ></i>
           <img class="img-fluid " src="assets/image/infantoM.jpg" alt="">
           <div class="position-absolute Tlegenda  ">
             <h5 class="text-light font-weight-bold">Nome da Coleção</h5>
-            <p class="text-light ml-n5 font-weight-bold">Casual</p>
+            <p class="h5 text-light ml-n4 font-weight-bold">Casual</p>
           </div>
         </div>
 
-        <div class="col-6 border position-relative">
-          <a href="" class="">
-            <i class="fa fa-heart-o fa-xl i"></i>
-          </a>
+        <div class="col-4 border position-relative">
+          
+            <i data-key="2" class="fas fa-heart  i"></i>
+          
           <img class="img-fluid " src="assets/image/adultoM.jpg" alt="">
           <div class="position-absolute Tlegenda ">
-            <h5 class="text-light">Nome da Coleçao</h5>
-            <p class="text-light ml-n5 font-weight-bold">calça </p>
+            <h5 class="text-light font-weight-bold">Nome da Coleçao</h5>
+            <p class="text-light ml-n4 font-weight-bold h5">calça </p>
           </div> 
         </div>
       </div>
 
 
-      <div class="row">
-        <div class="col-6 border position-relative">
-          <a href="" class="">
-            <i class="fa fa-heart-o fa-xl i  "></i>
-          </a>
+      <div class="row justify-content-around mb-1">
+        <div class="col-4 border position-relative">
+          
+            <i data-key="3" class="fas fa-heart  i  "></i>
+          
           <img class="img-fluid" src="assets/image/infantoH.jpg" alt="">
           <div class="position-absolute Tlegenda ">
             <h5 class="font-weight-bold text-light">Nome da Coleçao</h5>
-            <p class="font-weight-bold text-light ml-n5">moleton</p>
+            <p class="font-weight-bold text-light ml-n2">moleton</p>
           </div>
         </div>
 
-        <div class="col-6 border position-relative">
-          <a href="" class="">
-            <i class="fa fa-heart-o fa-xl i"></i>
-          </a>
+        <div class="col-4 border position-relative">
+          
+            <i data-key="4" class="fas fa-heart  i"></i>
+          
           <img class="img-fluid " src="assets/image/adultoH.jpg" alt="">
           <div class="position-absolute Tlegenda ">
             <h5 class="font-weight-bold text-light">Nome da Coleçao</h5>
-            <p class="font-weight-bold text-light ml-n5">camisa</p>
+            <p class="font-weight-bold text-light ml-n2">camisa</p>
         </div>
       </div>
 
 
-      <div class="row ml-0">
-        <div class="col-6 border  position-relative">
-          <a href="" class="">
-            <i class="fa fa-heart-o fa-xl i"></i>
-          </a>
+      <!-- <div class="row justify-content-around">
+        <div class="col-4 border  position-relative">
+          
+          <i data-key="5" class="fas fa-heart fa-xl i"></i>
+          
           <img class="img-fluid " src="assets/image/infantilH.jpg" alt="">
           <div class="position-absolute Tlegenda ">
             <h5 class="text-light font-weight-bold">Nome da Coleçao</h5>
@@ -301,17 +299,17 @@
           </div>
         </div>
 
-        <div class="col-6 border position-relative">
-          <a href="" class="">
-            <i class="fa fa-heart-o fa-xl i"></i>
-          </a>
+        <div class="col-4 border position-relative">
+          
+            <i data-key="6" class="fas fa-heart fa-xl i"></i>
+          
           <img class="img-fluid " src="assets/image/infantilM.jpg" alt=""> 
           <div class="position-absolute Tlegenda ">
             <h5 class="text-light font-weight-bold">Nome da Coleçao</h5>
             <p class="text-light ml-n5 font-weight-bold">calçado</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       
     </div>
@@ -417,6 +415,8 @@
   
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/ecommerce.js"></script>
+
   
 </body>
 </html>

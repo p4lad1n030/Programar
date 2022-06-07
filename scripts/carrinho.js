@@ -23,6 +23,7 @@ db.collection(carrinho).get().then(snapshot => {
     compras = compra.produto
     identify = doc.id
     input = $(this)
+    // replaceAll() use este
     $('#vitrine').append(`
     <section>
     
