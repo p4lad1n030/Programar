@@ -19,6 +19,9 @@ nav:hover{
 .d {
  height: 10vh;
 }
+.carousel-inner{
+  margin-left: 13%;
+}
 
 
 .h {
@@ -28,8 +31,6 @@ nav:hover{
   background-position: 50% 50%;
   height: 80vh;
 }
-
-
 
 @media screen and (max-width: 768px){
 .mm{
@@ -41,4 +42,87 @@ nav:hover{
 .mar{
   margin-left: auto;
 }
+}
+@media screen and (min-width:576px) {
+
+}
+@media screen and (min-width:768px) {
+  .h {
+    background-image: url('../assets/image/header1000x667.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 45vh;
+  }
+  .titulo1{
+    font-size: 6vw;
+  }
+  .carousel-inner{
+    margin-left: 13%;
+  }
+  
+}
+@media screen and (min-width:992px) {
+  .carousel-inner{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .h {
+    background-image: url('../assets/image/header1000x667.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%-2%;
+    height: 87vh;
+  }
+}
+@media screen and (min-width:1600px) {
+  .carousel-inner{
+    margin-left: 19%;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 25%;
+    bottom: 20px;
+    left: 13%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 11%;
+  margin-left: 15%;
+  list-style: none;
+  }
+}
+@media screen and (min-width:1920px) {
+  .carousel-caption {
+    position: absolute;
+    right: 41%;
+    bottom: 20px;
+    left: 13%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .carousel-indicators {
+    margin-right: 18%;
+
+  }
+  .carousel-inner{
+    margin-left: 22%;
+  }
 }

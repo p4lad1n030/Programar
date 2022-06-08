@@ -56,6 +56,7 @@ li{
 }
 
 
+
 @media screen and (max-width:575px) {
   .sideBar{display: none;}
 }
@@ -78,6 +79,12 @@ li{
   } 
   h5{
     font-size: 2.8vw;
+    text-shadow: 1px 3px 2px black;
+  }
+   .sombra{
+    font-size: 1.2vw;
+    text-shadow: 1px 3px 2px black;
+ 
   }
   .mar{
     margin-left: 25%;
@@ -116,16 +123,45 @@ li{
 }
 
 @media screen and (min-width:1200px){
+  .im{
+    margin-left: 20;
+  }
   .he1{
     height: 95vh;
   }
   h5{
     font-size: 1.8vw;
   }
+  .Tlegenda{
+    top: 1%;
+    right: 24%;
+    text-align: center;
+   }
+  .i {
+    font-size: 2vw;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    top: 13%;
+    left: 66%;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width:1540px){
+  .he1{
+    background-image: url('../assets/image/bebe.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 85vh;
+  } 
+  .Tlegenda{
+    top: 1%;
+    right: 49%;
+    text-align: center;
+   }
 }
 @media screen and (min-width:1920px){
   .Tlegenda{
-  
     top: 1%;
     right: 49%;
     text-align: center;

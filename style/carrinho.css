@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.carrinho:hover{
+  color: #066bd7 !important;
+}
+.fav:hover{
+  color: #FF0000!important;
+}
+.user:hover{
+  color: #066bd7 !important;
+}
+a:link {
+  text-decoration: none;
+}

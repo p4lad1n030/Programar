@@ -1,18 +1,18 @@
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCMHzHRtSSomPrTVxMu_ZMMVU2znTak12U",
-  authDomain: "loja-do-pedro.firebaseapp.com",
-  projectId: "loja-do-pedro",
-  storageBucket: "loja-do-pedro.appspot.com",
-  messagingSenderId: "790038704735",
-  appId: "1:790038704735:web:1f26d66e91085047bfe1ea",
-  measurementId: "G-EDM6WCR8HS"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCMHzHRtSSomPrTVxMu_ZMMVU2znTak12U",
+//   authDomain: "loja-do-pedro.firebaseapp.com",
+//   projectId: "loja-do-pedro",
+//   storageBucket: "loja-do-pedro.appspot.com",
+//   messagingSenderId: "790038704735",
+//   appId: "1:790038704735:web:1f26d66e91085047bfe1ea",
+//   measurementId: "G-EDM6WCR8HS"
+// };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig)
-const db = firebase.firestore()
-const carrinho = "carrinhoCompras";
+// firebase.initializeApp(firebaseConfig)
+// const db = firebase.firestore()
+// const carrinho = "carrinhoCompras";
 // função para verificar o banco de dados
 // db.collection(carrinho).get().then((snapshot)=>{
 //   snapshot.forEach((doc)=>{
@@ -21,6 +21,7 @@ const carrinho = "carrinhoCompras";
 // })
 
 // funções das paginas produtos
+//
 
 // função para definir o tamanho:
 var tm = function choiceSize() {
@@ -53,7 +54,7 @@ var tt = () => {
 
 // função que adiciona o produto a um map(objeto) do firebase
 $('#add').click(function criarProduto() {
-  img = $('img')[1]
+  img = $('img')[0]
   produto = {
     nome: $('h2').text(),
     preco: parseFloat($('#preco').text()),
@@ -65,23 +66,3 @@ $('#add').click(function criarProduto() {
   }
   db.collection(carrinho).add({ produto })
 }) 
-
-
-
-
-
-
-
-
-{program(amar)}
-
-
-
-
-                  
-
-
-
-
-
-

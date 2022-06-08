@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/d88fbfa2f1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../style/pdtHomPri.css">
+  <title>{program(amar)}</title>
+</head>
+<body>
+  <!-- menu para telas maiores do que 576px -->
+
+  <section class="container-fluid ">
+    <header class="d-flex justify-content-between  text-center text-light bg-dark">
+      <a href="../ecommerce.html" class="d-inline-block ml-2 h2" style='color:rgb(251, 248, 248)'>Logo</a>
+      <div class="d-flex align-self-center">
+        <a href="" class=""><i class='far fa-user-circle fa-xl mr-3 user' style='color:rgb(251, 248, 248)'></i></a>
+        <a href="carrinho.html" class=""><i class='fas fa-heart fa-xl mr-3 fav' style='color:rgb(251, 248, 248)'></i></a>
+        <a href="carrinho.html" class=""> </i>
+          <i class="fa-solid fa-xl fa-cart-shopping mr-4 carrinho " style='color:rgb(251, 248, 248)' ></i>
+        </a>
+      </div>
+    </header>
+    <h2 class="h1 text-center ">Camisa</h2>
+
+    <article class="row">
+      
+  
+      <div class="im col-md-6 position-relative">
+        <i data-key="5" class='fas fa-heart i'></i>
+
+        <img class="im" src="../assets/image/adultoH.jpg" alt="foto adulto homem" style="display:none">
+      </div>
+  
+      <aside class="col-md-5 ">
+        <div class="ml-5 " >
+          <p class=" h5">
+            Preço: </p> 
+            <p id="preco" class="h5">39.90</p>
+          <p class=" h5">
+            Tamanho:
+            <label id="size" for="tamanho">
+              P<input class="radio" type="radio" name="in" /><!--[0]-->
+              M<input class="radio" type="radio" name="in" checked /><!--[1]-->
+              G<input class="radio" type="radio" name="in" /><!--[2]--> </label
+            >
+          </p>
+          <p class="h5">
+            Quantidade:
+            <input
+              class="campo0" type="number" name="nNumbrr" id="cNunber" placeholder="quantas você quer" />
+          </p>
+          <p class="h5">
+            total:
+            <input
+              class="campo" type="text" name="ttot" id="ctot" readonly maxlength="5"/>
+          </p>
+          <i data-key="6" class='fas fa-cart-plus adcarrinho mx-5'></i>
+
+        </div>
+       </aside>
+    </article>
+
+     <footer class=" text-center text-light  bg-dark mar d-flex  justify-content-center">
+      <header class="">
+        <div class="align-self-center">
+          <h3 class="mb-3">Formas de Pagamento</h3>
+            <i class='fab fa-cc-mastercard fa-2xl mr-1'></i><p class="d-inline-block mr-3">master</p>
+            <i class='fab fa-cc-visa fa-2xl mr-1'></i><p class="d-inline-block mr-3">visa</p>
+            <i class='fab fa-paypal fa-2xl mr-1'></i><p class="d-inline-block mr-3">PayPal</p>
+            <i class="fa-brands fa-pix fa-2xl mr-1"></i> <p class="d-inline-block mr-">Pix</p>
+        </div>
+        <div class="d-flex flex-column mb-3 rodape">
+          <h3 class="mb-2">Contato</h3>
+          <div class="d-flex justify-content-around ">
+            <a href="" class=""><i class="fa-brands fa-2xl fa-facebook" style='color:white'></i></a>
+            <a href="" class=""><i class="fa-brands fa-2xl fa-instagram-square" style='color:white'></i></a>
+            <a href="" class=""><i class="fa-brands fa-2xl fa-whatsapp-square" style='color:white'></i></a>
+          </div> 
+        </div>
+      </header>
+    
+    </footer>
+  </section>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/ecommerce.js"></script>
+  <script src="../scripts/produtos.js"></script>
+</body>
+</html>

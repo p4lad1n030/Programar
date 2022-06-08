@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.carrinho:hover{
+  color: #066bd7 !important;
+}
+.fav:hover{
+  color: #FF0000!important;
+}
+.user:hover{
+  color: #066bd7 !important;
+}
+a:link {
+  text-decoration: none;
+}
+.tsha{
+  text-shadow: 1px  1px black;
+}
+.im{
+  margin-left: 1%;
+  margin-bottom: 1%;
+  background-image: url('../assets/image/adultoH.jpg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  box-sizing: border-box;
+
+}
+.im:hover{
+  margin-left: 10%;
+  margin-right: 7%;
+  margin-bottom: 10%;
+  /* margin-top: 10%; */
+  padding:30px;
+  max-width:80vh;
+  /* box-sizing: border-box; */
+  transform: scale(1.3);
+}
+.i {
+  font-size: 8vw;
+  z-index: 10;
+  position: absolute;
+  color: white;
+  top: 7%;
+  left: 75%;
+  margin-top: 5px;
+}
+.like{
+  color: red!important;
+}
+.campo0{
+  width: 190px;
+}
+.campo{
+  width: 116px;
+}
+.adcarrinho{
+  /* margin:1% auto ; */
+  font-size: 15vw;
+}
+.compra{
+  color: green;
+}
+@media screen and (min-width:500px) {
+  .i {
+    font-size: 4vw;
+  }
+}
