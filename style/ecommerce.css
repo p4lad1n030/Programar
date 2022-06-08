@@ -60,8 +60,33 @@ li{
 @media screen and (max-width:575px) {
   .sideBar{display: none;}
 }
-
-@media screen and (min-width:574px) {
+@media screen and (min-width:350px) and (orientation:landscape){
+  .land{
+display: inline;
+  }
+  .lands{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .sideBar{
+    box-sizing: border-box;
+    text-overflow: clip;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 24%;
+    min-height: 100%; 
+    position: fixed;
+    overflow-y: auto;
+  }
+  .he1{
+    background-image: url('../assets/image/bebe.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 85vh;
+  } 
+}
+@media screen and (min-width:574px)  {
   .sideBar{
     text-align: center;
     margin: 0;
